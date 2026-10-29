@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-cloud-api-webhook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Endpoint webhook WhatsApp Business Cloud API: verifikasi GET, signature validation, dan log pesan masuk",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test:webhook": "node scripts/send-test-message.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
